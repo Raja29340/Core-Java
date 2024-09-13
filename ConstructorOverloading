@@ -1,0 +1,29 @@
+package basic_of_java;
+
+public class ConstructorOverloading {
+
+    // Constructor with two int parameters
+    ConstructorOverloading(int a, int b) {
+        System.out.println("This is the constructor with two int parameters");
+    }
+    
+    // Constructor with a long and a double parameter
+    ConstructorOverloading(long a, double c) {
+        System.out.println("This is the constructor with a long and a double parameter");
+    }
+    
+    // Constructor with a String parameter
+    ConstructorOverloading(String b) {
+        System.out.println("This is the constructor with a String parameter");
+    }
+    
+    public static void main(String[] args) {
+        // Creating instances of ConstructorOverloading with different constructors
+        ConstructorOverloading obj1 = new ConstructorOverloading(0, 0);
+        ConstructorOverloading obj2 = new ConstructorOverloading(10L, 12.0);
+        ConstructorOverloading obj3 = new ConstructorOverloading("Hello");
+        
+        new ConstructorOverloading(0, 0);
+        new ConstructorOverloading(10L, 12.0);
+    }
+}
