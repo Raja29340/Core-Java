@@ -1,0 +1,25 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        String s = "RADAR";
+        String reverse = "";
+        System.out.println("This is old value " +s);
+
+        for(int i = s.length()-1; i>=0; i--)
+        {
+            reverse += s.charAt(i);
+        }
+        System.out.println("This is reverse value " +reverse);
+
+        if(s.equals(reverse))
+        {
+            System.out.println("This is palindrom");
+        }
+        
+        else
+        {
+        System.out.println("This is not palindrom");
+
+        }
+        
+    }
+}
