@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a[] = new int[5];
+        a[0] = 12;
+        a[1] = 6;
+        a[2] = 13;
+        a[3] = 2;
+        a[4] = 18;
+        
+        Arrays.sort(a); // Corrected to use parentheses
+        System.out.println(Arrays.toString(a)); // Print the sorted array
+    }
+}
