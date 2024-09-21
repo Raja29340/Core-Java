@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        List<Object> l = new ArrayList<>(); // Specify type parameter for the list
+        l.add(10);
+        l.add("Rajan");
+        l.add(null);
+        l.add('R');
+        l.add(12.4);
+        
+        Iterator<Object> s1 = l.iterator(); // Corrected method call
+
+        // Print elements using the Iterator
+        while (s1.hasNext()) {
+            System.out.println(s1.next());
+        }
+    }
+}
